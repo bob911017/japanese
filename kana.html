@@ -76,7 +76,7 @@ function check(){
 		newRow.insertCell(0).innerHTML=document.getElementById('Q').innerHTML;	
 		var correctAns=answer[question.indexOf(document.getElementById('Q').innerHTML)];
 		newRow.insertCell(1).innerHTML=correctAns;
-		var myInput=document.getElementById('A').value;
+		var myInput=document.getElementById('A').value.toLowerCase();
 		newRow.insertCell(2).innerHTML=myInput;
 		
 		total=parseInt(document.getElementById('total').innerHTML)+1;
@@ -170,7 +170,7 @@ document.addEventListener('keydown',function(e){
 <div style='float:left;'>
 <input id='Qtype' class='change'type=button value='片假名 (カタカナ)' onclick='testChange()'>
 <div id='Q' class='Q'></div>
-<input id='A' type=text size=10 maxlength=2 style="min-height:25px;text-align: center;text-transform: lowercase;">
+<input id='A' type=text size=10 maxlength=2 style="min-height:25px;text-align: center;">
 <input type=button value='OK！' onclick='check()' style="height:33px;">
 </div>
 
