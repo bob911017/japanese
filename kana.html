@@ -6,6 +6,21 @@
 </head>
 
 <style>
+div.index{
+	height:50px;
+	width: 820px;
+	text-align: center;
+	border-bottom: 2px black solid;
+	margin-bottom: 45px;
+}
+input.index{
+	background: white;
+	font-weight: bold;
+	font-size: 20px;
+    padding: 10px 20px 10px;
+	border-style: none;
+	cursor: pointer;
+}
 div.tableTile{
     background:#3C3C3C;
     color:white;
@@ -138,7 +153,14 @@ document.addEventListener('keydown',function(e){
 </script>
 
 <body onload='testChange()'>
-<div style='width:750px'>
+
+<div class='index'>
+	<input class='index' type=button value='五十音' style='border-bottom: 5px red solid;'>
+	<input class='index' type=button value='日常會話' onclick="location.href='nichijiou.html'">
+	<input class='index' type=button value='基礎文法' onclick="location.href='grammar.html'">
+</div>
+
+<div style='width:800px;margin: 0 auto;'>
 
 <div style="height:55px;">
 	<input id='b0' class='tableTile' type=button value='平假名 (ひらがな)' onclick='tableChange(0)' style='color:yellow'>
@@ -147,7 +169,7 @@ document.addEventListener('keydown',function(e){
 	<input id='b3' class='tableTile' type=button value='拗音' onclick='tableChange(3)'>
 </div>
 
-<div id='t0''><table>
+<div id='t0'><table>
 	<tr style="background:black;color:white;">
 	<td></td><td>a 段</td><td>i 段</td><td>u 段</td><td>e 段</td><td>o 段</td>
 	<tr>

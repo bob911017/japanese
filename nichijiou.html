@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>日常會話</title>
+	<link rel="icon" href="oruyanke.png" type="image/x-icon">
+</head>
+
+<style>
+div.index{
+	height:50px;
+	width: 820px;
+	text-align: center;
+	border-bottom: 2px black solid;
+	margin-bottom: 45px;
+}
+input.index{
+	background: white;
+	font-weight: bold;
+	font-size: 20px;
+    padding: 10px 20px 10px;
+	border-style: none;
+	cursor: pointer;
+}
+input.topic{
+	background: #005AB5;
+    color: white;
+    font-weight: bold;
+	font-size: 20px;
+    padding: 10px 20px 10px;
+    border-radius: 10px 10px 0 0;
+	text-align: center;
+	float:left;
+	cursor: pointer;
+}
+div.cn{
+	margin-top: 10px;
+    padding: 0 10px 10px 10px;
+    font-weight: bold;
+	width:500px;
+}
+div.nh{
+	border-width: 2px;
+    border-color: black;
+    border-style: solid;
+	padding: 10px;
+	width:500px;
+	margin-bottom: 30px;
+}
+div.bg{
+	background:#FFED97;
+	padding: 10px;
+    width: 800px;
+	border-top: 10px #007500 solid;
+}
+
+</style>
+
+<script>
+function tableChange(n){
+	var id=[0,1,2,3];
+	var i;
+	for (i = 0; i < id.length; i++) {
+		if (id[i]==n){
+			document.getElementById('t'+id[i]).style.display='block';
+			document.getElementById('b'+id[i]).style.color='yellow';
+		}else{
+			document.getElementById('t'+id[i]).style.display='none';
+			document.getElementById('b'+id[i]).style.color='white';
+		}
+	}
+}
+</script>
+</script>
+
+<body>
+
+<div class='index'>
+	<input class='index' type=button value='五十音' onclick="location.href='kana.html'">
+	<input class='index' type=button value='日常會話' style='border-bottom: 5px red solid;'>
+	<input class='index' type=button value='基礎文法' onclick="location.href='grammar.html'">
+</div>
+
+<div style="height:54px;">
+	<input id='b0' class='topic' type=button value='問候語 (あいさつ)' onclick='tableChange(0)' style='color:yellow'>
+</div>
+<div class='bg'>
+<div class='cn'>早安</div>
+<div class='nh'>
+	おはようございます<br>
+	ohayogozaimasu
+</div>
+
+<div class='cn'>
+你好</div>
+<div class='nh'>
+こんにちは<br>
+konichiwa
+</div>
+
+<div class='cn'>
+您好嗎?</div>
+<div class='nh'>
+お元気ですか？<br>
+ogenkidesuga?
+</div>
+
+<div class='cn'>
+晚上好</div>
+<div class='nh'>
+こんばんは<br>
+konbanwa
+</div>
+
+<div class='cn'>
+晚安</div>
+<div class='nh'>
+おやすみなさい<br>
+oyasumi nasai
+</div>
+
+<div class='cn'>
+謝謝</div>
+<div class='nh'>
+ありがとうございます<br>
+arigatou gozaimasu
+</div>
+
+<div class='cn'>
+不客氣</div>
+<div class='nh'>
+どういたしまして<br>
+douitashimashite
+</div>
+
+<div class='cn'>
+對不起</div>
+<div class='nh'>
+ごめんなさい<br>
+gomen nasai
+</div>
+
+<div class='cn'>
+不好意思</div>
+<div class='nh'>
+すみません<br>
+sumimasen
+</div>
+
+<div class='cn'>
+我回來了</div>
+<div class='nh'>
+ただいま<br>
+tadaima
+</div>
+
+<div class='cn'>
+歡迎回家</div>
+<div class='nh'>
+おかえりなさい<br>
+okaeri nasai
+</div>
+
+<div class='cn'>
+我開動了</div>
+<div class='nh'>
+ いただきます<br>
+itadakimasu
+</div>
+
+<div class='cn'>
+我吃飽了</div>
+<div class='nh'>
+ごちそうさまでした<br>
+gochisousamadeshita
+</div>
+
+<div class='cn'>
+拜託你了</div>
+<div class='nh'>
+お願いします<br>
+onegaishimasu
+</div>
+
+<div class='cn'>
+辛苦了</div>
+<div class='nh'>
+お疲れ様でした<br>
+otsukare samadeshita
+</div>
+</div>
+</body>
+
+</html>

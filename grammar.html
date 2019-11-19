@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>基礎文法</title>
+	<link rel="icon" href="oruyanke.png" type="image/x-icon">
+</head>
+
+<style>
+div.index{
+	height:50px;
+	width: 820px;
+	text-align: center;
+	border-bottom: 2px black solid;
+	margin-bottom: 45px;
+}
+input.index{
+	background: white;
+	font-weight: bold;
+	font-size: 20px;
+    padding: 10px 20px 10px;
+	border-style: none;
+	cursor: pointer;
+}
+input.topic{
+	background: #005AB5;
+    color: white;
+    font-weight: bold;
+	font-size: 20px;
+    padding: 10px 20px 10px;
+    border-radius: 10px 10px 0 0;
+	text-align: center;
+	float:left;
+	cursor: pointer;
+}
+div.cn{
+	margin-top: 10px;
+    padding: 0 10px 10px 10px;
+    font-weight: bold;
+	width:500px;
+}
+div.nh{
+	border-width: 2px;
+    border-color: black;
+    border-style: solid;
+	padding: 10px;
+	width:500px;
+	margin-bottom: 30px;
+}
+div.bg{
+	background:#FFED97;
+	padding: 10px;
+    width: 800px;
+	border-top: 10px #007500 solid;
+}
+div.conversation{
+    border: 2px black dashed;
+    padding: 10px;
+    margin: 20px 0 50px;
+	font-size: 15px;
+}
+pre.note{
+	margin-bottom: 50px;
+	font-size: 15px;
+}
+</style>
+
+<script>
+function tableChange(n){
+	var id=[0,1,2,3];
+	var i;
+	for (i = 0; i < id.length; i++) {
+		if (id[i]==n){
+			document.getElementById('t'+id[i]).style.display='block';
+			document.getElementById('b'+id[i]).style.color='yellow';
+		}else{
+			document.getElementById('t'+id[i]).style.display='none';
+			document.getElementById('b'+id[i]).style.color='white';
+		}
+	}
+}
+</script>
+
+<body>
+
+<div class='index'>
+	<input class='index' type=button value='五十音' onclick="location.href='kana.html'">
+	<input class='index' type=button value='日常會話' onclick="location.href='nichijiou.html'">
+	<input class='index' type=button value='基礎文法' style='border-bottom: 5px red solid;'>
+</div>
+
+<div style="height:49px;">
+	<input id='b0' class='topic' type=button value='初次見面' onclick='tableChange(0)' style='color:yellow'>
+	<input id='b1' class='topic' type=button value='這是' onclick='tableChange(1)'>
+</div>
+
+<div class='bg'>
+
+
+<div id='t0'>
+<div class='conversation'>
+<pre title='你好'>
+A: こんにちは</pre>
+<pre title='你好'>
+B: こんにちは</pre>
+<pre title='啊，初次見面，我叫A'>
+A: あ、初めまして、私はドリアンです。</pre>
+<pre title='初次見面，我叫B'>
+B: 初めまして、Bです。</pre>
+<pre title='B桑，你是一個人嗎'>
+A: Bさんは、一人ですか?</pre>
+<pre title='是的，我是一個人'>
+B: はい、一人です</pre>
+<pre title='我也是一個人'>
+A: 私も一人です</pre>
+<pre title='(這人有事嗎)'>
+B: （何この人...）</pre>
+<pre title='我是留學生，日文不是很會説，櫻花小姐請問你幾歲呢'>
+A: 私は留学生です。日本語は上手ではありません。さくらさんは、何歳ですか？</pre>
+<pre title='我是女生，對女生來説年齡是秘密'>
+B: 私は女です。歳は秘密です！</pre>
+<pre title='對...對不起'>
+A: ご、ごめんなさい。。</pre>
+<br><br>
+<pre>
+<b>漢字備註:</b>
+初(はじ)、私(わたし)、一人(ひとり)、何(なに)、留学生(りゅうがくせい)、日本語(にほんご)、
+上手(じょうず)、歲(さい)、女(おんな)、秘密(ひみつ)
+</pre>
+</div>
+
+<div class='cn'>A是B</div>
+<div class='nh'>
+	AはBです
+</div>
+<pre class='note'>
+<li>は(wa)為助詞，表示前面的名詞是主語。
+<li>です為斷定助動詞，表"是"。
+<li>日文的句型是主賓謂(SOV)。
+</pre>
+
+<div class='cn'>A不是B</div>
+<div class='nh'>
+	AはBではありません<br>
+	AはBじゃありません
+</div>
+<pre class='note'>
+<li>では較有禮貌，じゃ比較口語化。
+</pre>
+
+<div class='cn'>A是B嗎</div>
+<div class='nh'>
+	AはBですか
+</div>
+<div class='cn'>A也是B</div>
+<div class='nh'>
+	AもBです
+</div>
+
+<div>
+	<b>補充:</b><br>
+	自我介紹(超有禮貌版)　───　私は○○と<a title='もう'>申</a>します<br>
+</div>
+</div>
+
+
+
+<div id='t1' style='display:none;'>
+<div class='conversation'>
+
+<pre title='疑？B桑'>
+A: あれ？Bさん？ </pre>
+<pre title='A，你好'>
+B: Aさん、こんにちは</pre>
+<pre title='你好，好巧哦。你手上那隻兔子好可愛'>
+A: こんにちは、偶然ですね。そのうさぎ、可愛いですね。</pre>
+<pre title='這是我家的米米醬'>
+B: これは、うちのミミちゃんです。</pre>
+<pre title='哦～那，那個動物是什麽啊'>
+A: へぇ。あ、あの動物は、なんですか？</pre>
+<pre title='哪個？'>
+B: どれですか？</pre>
+<pre title='那個啦，那個'>
+A: あれです、あれ</pre>
+<pre title='那是狸貓'>
+B: あれはたぬきです。</pre>
+<pre title='疑？那個小小的貓頭鷹是A桑你的嗎'>
+B: あれ？その小さなフクロウは、Aさんのですか？</pre>
+<pre title='是的 這是對我來説很重要的寵物'>
+A: はい、そうです。これは私の大切なペットです。</pre>
+<pre title='嘻嘻 A先生 你好可愛哦'>
+B: ふふ、Aさん、かわいいですね。</pre>
+<br><br>
+<pre>
+<b>漢字備註:</b>
+偶然(ぐうぜん)、可愛(かわい)、動物(どうぶつ)、小(ちい)、私(わたし)、大切(たいせつ)
+
+<b>補充:</b>
+是的: はい、そうです
+不是: いいえ、違(ちが)います
+</pre>
+</div>
+
+<div class='cn'>這是A</div>
+<div class='nh'>
+	これはＡです
+</div>
+<pre class='note'>
+<li>これ(這個): 指離說話者近的東西
+<li>それ(那個): 指離聽話人近的東西
+<li>あれ(那個): 指離說話人和聽話人都遠的東西
+<li>どれ(哪個)
+</pre>
+
+<div class='cn'>這是A的B</div>
+<div class='nh'>
+	これはＡのＢです
+</div>
+<pre class='note'>
+<li>這是誰的: これわ誰(だれ)のですか
+<li>這是什麼: これわ何(なん)ですか
+</pre>
+
+<div class='cn'>這個A是B的</div>
+<div class='nh'>
+	このＡはＢのです
+</div>
+<pre class='note'>
+<li>跟名詞接在一起的時候要把れ換成の
+<li>の只能用在名詞後面，不會接在形容詞後面
+<li>這是誰的: これわ誰(だれ)のですか
+</pre>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
