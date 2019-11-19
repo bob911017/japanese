@@ -62,6 +62,18 @@ pre.note{
 	margin-bottom: 50px;
 	font-size: 15px;
 }
+table,th,td {
+  border: 1px solid black;
+  text-align:center;
+  font-weight:bold;
+}
+table{
+	width:564px;
+	background:#D0D0D0;
+}
+tr{height:40px;}
+
+td.lead{background:black;color:white;}
 </style>
 
 <script>
@@ -91,6 +103,7 @@ function tableChange(n){
 <div style="height:49px;">
 	<input id='b0' class='topic' type=button value='初次見面' onclick='tableChange(0)' style='color:yellow'>
 	<input id='b1' class='topic' type=button value='這是' onclick='tableChange(1)'>
+	<input id='b2' class='topic' type=button value='場所' onclick='tableChange(2)'>
 </div>
 
 <div class='bg'>
@@ -232,6 +245,62 @@ B: ふふ、Aさん、かわいいですね。</pre>
 
 </div>
 
+
+<div id='t2' style='display:none;'>
+
+<div class='cn'>(這裡,那裡)是(地方)</div>
+<div class='nh'>
+	(ここ,そこ,あそこ)は(場所)です
+</div>
+<pre class='note'>
+<li>場所補充: 図書館(としょかん)、食堂(しょくどう)、職員室(しょくいんしつ)、トイレ、コンビニ<br>
+<table>
+	<tr style="background:black;color:white;">
+	<td colspan="5">指示代名詞一覽表</td></tr>
+	<tr style="background:black;color:white;">
+	<td></td><td>こ系列</td><td>そ系列</td><td>あ系列</td><td>ど系列</td>
+	<tr>
+	<td class='lead'>物</td><td>これ</td><td>それ</td><td>あれ</td><td>どれ</td>
+	<tr>
+	<td class='lead'>物、人</td><td>この+名詞</td><td>その+名詞</td><td>あの+名詞</td><td>どの+名詞</td>
+	<tr>
+	<td class='lead'>場所</td><td>ここ</td><td>そこ</td><td>あそこ</td><td>どこ</td>
+	<tr>
+	<td class='lead'>方向、場所(有禮)</td><td>こちら</td><td>そちら</td><td>あちら</td><td>どちら</td>
+	<tr>
+	<td class='lead'>方向、場所(口語)</td><td>こっち</td><td>そっち</td><td>あっち</td><td>どっち</td>
+</table>
+</pre>
+
+<div class='cn'>(地方,人,東西)在(這裡,那裡)</div>
+<div class='nh'>
+	(場所,人,物)は(ここ,そこ,あそこ)です
+</div>
+
+<div class='cn'>(地方,人,東西)在哪裡?</div>
+<div class='nh'>
+	(場所,人,物)はどこですか?
+</div>
+
+<div class='cn'>從~到~</div>
+<div class='nh'>
+	~から~まで
+</div>
+<pre class='note'>
+<li>這裡是從一點到兩點:</li>
+ここは1時から２時までです<br>
+<li>從這裡到那裡搭新幹線要花2小時</li>
+ここからあそこまで新幹線で２時間かかります<br>
+<li>從這裡到那裡要花多久?</li>
+ここからあそこまでどのくらいかかりますか<br>
+</pre>
+
+<div>
+	<b>補充:</b><br>
+	樓層: 1階(いがい)、2階(にがい)、3階(さんがい)、4階(よんがい)、何階(なんがい)
+</div>
+
+</div>
 
 
 </div>

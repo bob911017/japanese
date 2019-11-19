@@ -23,6 +23,7 @@ input.index{
 }
 input.topic{
 	background: #005AB5;
+	height: 55px;
     color: white;
     font-weight: bold;
 	font-size: 20px;
@@ -52,7 +53,16 @@ div.bg{
     width: 800px;
 	border-top: 10px #007500 solid;
 }
-
+table,th,td {
+  border: 1px solid black;
+  text-align:center;
+  font-weight:bold;
+}
+table{
+	width:564px;
+	background:#D0D0D0;
+}
+tr{height:40px;}
 </style>
 
 <script>
@@ -80,10 +90,15 @@ function tableChange(n){
 	<input class='index' type=button value='基礎文法' onclick="location.href='grammar.html'">
 </div>
 
-<div style="height:54px;">
+<div style="height:55px;">
 	<input id='b0' class='topic' type=button value='問候語 (あいさつ)' onclick='tableChange(0)' style='color:yellow'>
+	<input id='b1' class='topic' type=button value='數字' onclick='tableChange(1)'>
+	<input id='b2' class='topic' type=button value='星期和時間' onclick='tableChange(2)'>
 </div>
 <div class='bg'>
+
+
+<div id='t0'>
 <div class='cn'>早安</div>
 <div class='nh'>
 	おはようございます<br>
@@ -187,6 +202,188 @@ onegaishimasu
 お疲れ様でした<br>
 otsukare samadeshita
 </div>
+</div>
+
+
+
+<div id='t1' style='display:none;'>
+
+<div class='cn'>
+1~9</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+	<tr>
+	<td>いち</td><td>に</td><td>さん</td><td>よん / し</td><td>ご</td>
+	<tr style="background:black;color:white;">
+	<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+	<tr>
+	<td>ろく</td><td>なな / しち</td><td>はち</td><td>きゅう / く</td><td>じゅう</td>
+</table><br><br>
+
+<div class='cn'>
+11~19</div>
+<div class='nh'>
+じゅう+(1~9)
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+	<tr>
+	<td>じゅういち</td><td>じゅうに</td><td>じゅうさん</td><td>じゅうよん<br>じゅうし</td><td>じゅうご</td>
+	<tr style="background:black;color:white;">
+	<td>16</td><td>17</td><td>18</td><td>19</td>
+	<tr>
+	<td>じゅうろく</td><td>じゅうなな<br>じゅうしち</td><td>じゅうはち</td><td>じゅうきゅう<br>じゅうく</td>
+</table><br><br>
+
+<div class='cn'>
+20~90</div>
+<div class='nh'>
+(1~9)+じゅう
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>10</td><td>20</td><td>30</td><td>40</td><td>50</td>
+	<tr>
+	<td>いちじゅう</td><td>にじゅう</td><td>さんじゅう</td><td>よんじゅう</td><td>ごじゅう</td>
+	<tr style="background:black;color:white;">
+	<td>60</td><td>70</td><td>80</td><td>90</td>
+	<tr>
+	<td>ろくじゅう</td><td>ななじゅう</td><td>はちじゅう</td><td>きゅうじゅう</td>
+</table><br><br>
+
+<div class='cn'>
+100~900</div>
+<div class='nh'>
+(1~9) + (ひゃく / びゃく / ぴゃく)
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>100</td><td>200</td><td>300</td><td>400</td><td>500</td>
+	<tr>
+	<td>ひゃく</td><td>にひゃく</td><td>さんびゃく</td><td>よんひゃく</td><td>ごひゃく</td>
+	<tr style="background:black;color:white;">
+	<td>600</td><td>700</td><td>800</td><td>900</td>
+	<tr>
+	<td>ろっぴゃく</td><td>ななひゃく</td><td>はっぴゃく</td><td>きゅうひゃく</td>
+</table><br><br>
+
+<div class='cn'>
+1000~9000</div>
+<div class='nh'>
+(1~9)+せん
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>1000</td><td>2000</td><td>3000</td><td>4000</td><td>5000</td>
+	<tr>
+	<td>せん<br>いっせん</td><td>にせん</td><td>さんぜん</td><td>よんせん</td><td>ごせん</td>
+	<tr style="background:black;color:white;">
+	<td>6000</td><td>7000</td><td>8000</td><td>9000</td>
+	<tr>
+	<td>ろくせん</td><td>ななせん</td><td>はっせん</td><td>きゅうせん</td>
+</table><br><br>
+
+<div class='cn'>
+10000</div>
+<div class='nh'>
+いちまん ※”1" 要念
+</div>
+
+</div>
+
+
+
+
+<div id='t2' style='display:none;'>
+
+<div class='cn'>
+今天星期幾?</div>
+<div class='nh'>
+今日(きょう)は何(なん)曜日ですか?
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>明天</td><td>明天</td><td>昨天</td><td>前天</td>
+	<tr>
+	<td>明日<br>あした</td>
+	<td>明後日<br>あさって</td>
+	<td>昨日<br>きのう</td>
+	<td>一昨日<br>おととい</td>
+	<tr style="background:black;color:white;">
+	<td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td>
+	<tr>
+	<td>月曜日<br>げつようび</td>
+	<td>火曜日<br>かようび</td>
+	<td>水曜日<br>すいようび</td>
+	<td>木曜日<br>もくようび</td>
+	<tr style="background:black;color:white;">
+	<td>星期五</td><td>星期六</td><td>星期日</td>
+	<tr>
+	<td>金曜日<br>きんようび</td>
+	<td>土曜日<br>どようび</td>
+	<td>日曜日<br>にちようび</td>
+</table><br><br>
+
+<div class='cn'>
+現在幾點?</div>
+<div class='nh'>
+今(いま)何時(なんじ)ですか?
+</div>
+
+<div class='cn'>
+~點</div>
+<div class='nh'>
+~時(じ)
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>1點</td><td>2點</td><td>3點</td><td>4點</td><td>5點</td><td>6點</td>
+	<tr>
+	<td>1時<br>いちじ</td>
+	<td>2時<br>にじ</td>
+	<td>3時<br>さんじ</td>
+	<td>4時<br>よじ</td>
+	<td>5時<br>ごじ</td>
+	<td>6時<br>ろくじ</td>
+	<tr style="background:black;color:white;">
+	<td>7點</td><td>8點</td><td>9點</td><td>10點</td><td>11點</td><td>12點</td>
+	<tr>
+	<td>7時<br>しちじ</td>
+	<td>8時<br>はちじ</td>
+	<td>9時<br>くじ</td>
+	<td>10時<br>じゅうじ</td>
+	<td>11時<br>じゅういちじ</td>
+	<td>12時<br>じゅうにじ</td>
+</table><br><br>
+
+<div class='cn'>
+~分</div>
+<div class='nh'>
+~分(ふん / ぷん)
+</div>
+<table>
+	<tr style="background:black;color:white;">
+	<td>1分</td><td>2分</td><td>3分</td><td>4分</td><td>5分</td>
+	<tr>
+	<td>1分<br>いっぷん</td>
+	<td>2分<br>にふん</td>
+	<td>3分<br>さんぷん</td>
+	<td>4分<br>よじぷん</td>
+	<td>5分<br>ごじふん</td>
+	<tr style="background:black;color:white;">
+	<td>6分</td><td>7分</td><td>8分</td><td>9分</td><td>10分</td>
+	<tr>
+	<td>6分<br>ろっぷん</td>
+	<td>7分<br>ななふん</td>
+	<td>8分<br>はっぷん</td>
+	<td>9分<br>きゅうふん</td>
+	<td>10分<br>じゅっぷん</td>
+</table><br><br>
+
+</div>
+
 </div>
 </body>
 
