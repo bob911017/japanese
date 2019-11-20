@@ -63,11 +63,15 @@ table{
 	background:#D0D0D0;
 }
 tr{height:40px;}
+pre.note{
+	margin-bottom: 50px;
+	font-size: 15px;
+}
 </style>
 
 <script>
 function tableChange(n){
-	var id=[0,1,2,3];
+	var id=[0,1,2,3,4];
 	var i;
 	for (i = 0; i < id.length; i++) {
 		if (id[i]==n){
@@ -94,6 +98,7 @@ function tableChange(n){
 	<input id='b0' class='topic' type=button value='問候語 (あいさつ)' onclick='tableChange(0)' style='color:yellow'>
 	<input id='b1' class='topic' type=button value='數字' onclick='tableChange(1)'>
 	<input id='b2' class='topic' type=button value='星期和時間' onclick='tableChange(2)'>
+	<input id='b3' class='topic' type=button value='邀約' onclick='tableChange(3)'>
 </div>
 <div class='bg'>
 
@@ -305,7 +310,7 @@ otsukare samadeshita
 </div>
 <table>
 	<tr style="background:black;color:white;">
-	<td>明天</td><td>明天</td><td>昨天</td><td>前天</td>
+	<td>明天</td><td>後天</td><td>昨天</td><td>前天</td>
 	<tr>
 	<td>明日<br>あした</td>
 	<td>明後日<br>あさって</td>
@@ -329,7 +334,7 @@ otsukare samadeshita
 <div class='cn'>
 現在幾點?</div>
 <div class='nh'>
-今(いま)何時(なんじ)ですか?
+今(いま)は何時(なんじ)ですか?
 </div>
 
 <div class='cn'>
@@ -383,6 +388,62 @@ otsukare samadeshita
 </table><br><br>
 
 </div>
+
+
+
+
+<div id='t3' style='display:none;'>
+
+<div class='cn'>
+要一起~嗎?</div>
+<div class='nh'>
+一緒(いっしょ)に～ませんか？
+</div>
+
+<div class='cn'>
+明天我們一起去動物園嗎? (有禮，比較有在問對方意見)</div>
+<div class='nh'>
+明日一緒に動物園に行きませんか？
+</div>
+
+<div class='cn'>
+明天要一起喝啤酒嗎?</div>
+<div class='nh'>
+明日一緒にビールを飲みましょ？
+</div>
+
+<div class='cn'>
+好啊，一起去吧</div>
+<div class='nh'>
+いいですね、いきましょ。
+</div>
+
+<div class='cn'>
+對不起，有點...</div>
+<div class='nh'>
+すみません、ちょっと...
+</div>
+
+<div class='cn'>
+對不起，明天有事</div>
+<div class='nh'>
+すみません、明日は用事(ようじ)があります。
+</div>
+
+<div class='cn'>
+對不起，那一天我要去見朋友</div>
+<div class='nh'>
+すみません、その日は友達(ともだち)にあいます。
+</div>
+
+
+
+
+
+</div>
+
+
+
 
 </div>
 </body>
