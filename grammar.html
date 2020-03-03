@@ -8,7 +8,7 @@
 
 <script>
 function tableChange(n){
-	var id=[0,1,2,3,4];
+	var id=[0,1,2,3,4,5,6];
 	var i;
 	for (i = 0; i < id.length; i++) {
 		if (id[i]==n){
@@ -36,6 +36,8 @@ function tableChange(n){
 	<input id='b2' class='topic' type=button value='場所' onclick='tableChange(2)'>
 	<input id='b3' class='topic' type=button value='動詞和助詞' onclick='tableChange(3)'>
 	<input id='b4' class='topic' type=button value='疑問詞' onclick='tableChange(4)'>
+	<input id='b5' class='topic' type=button value='給/借' onclick='tableChange(5)'>
+	<input id='b6' class='topic' type=button value='形容詞' onclick='tableChange(6)'>
 </div>
 
 <div class='bg'>
@@ -373,8 +375,73 @@ B: ふふ、Aさん、かわいいですね。</pre>
 
 
 
+<div id='t5' style='display:none;'>
+
+<div class='cn'>給</div>
+<div class='nh'>あげます</div>
+<pre class='note'>
+<li>主語=我
+<li>私は <人> に <物> をあげます。　：　我給某人某物
+<li>私は <人> に <物> をあげました。　：　過去式
+</pre>
+
+<div class='cn'>收到</div>
+<div class='nh'>もらいます</div>
+<pre class='note'>
+<li>主語=我，有感謝的心情
+<li>私は <人> に <物> をもらいます。　：　我從某人得到某物
+<li>私は <人> から <物> をもらいます。　：　我從某人得到某物
+<li>私は <人> に <物> をもらいました。　：　過去式
+</pre>
+
+<div class='cn'>給</div>
+<div class='nh'>くれます</div>
+<pre class='note'>
+<li>主語=第三人稱，が表示前面的名詞是重點
+<li><人> が私に <物> をくれます。　：　某人給我某物
+<li><人> が私に <物> をくれました。　：　過去式
+</pre>
+
+<div class='cn'>借出</div>
+<div class='nh'>貸(か)します</div>
+<pre class='note'>
+<li>私は <人> に <物> を貸します。　：　我借某人某物
+<li>私は <人> から <物> を貸します。　：　我借某人某物
+</pre>
+
+<div class='cn'>借入</div>
+<div class='nh'>借(か)ります</div>
+<pre class='note'>
+<li>私は <人> に <物> を借します。　：　我從某人借某物
+<li>私は <人> から <物> を借します。　：　我從某人借某物
+</pre>
+
+</div>
 
 
+
+<div id='t6' style='display:none;'>
+<table>
+	<tr style="background:black;color:white;">
+	<td></td><td>句型</td><td>範例</td>
+	<tr>
+	<td class='lead'>い形容詞</td><td>い形容詞 + い + 名詞</td><td>楽しい、新しい</td>
+	<tr>
+	<td class='lead'>な形容詞</td><td>い形容詞 + な + 名詞</td><td>綺麗な、嫌いな</td>
+</table><br><br>
+
+<div class='nh'>(名詞) + は + (形容詞)です</div>
+
+<div class='nh'>(名詞) + は + (形容詞+名詞)です</div>
+
+<div class='cn'>是怎樣的人?</div>
+<div class='nh'>どんな+人(名詞)</div>
+<pre class='note'>
+空港(くうこう)、高速バス(こうそくばす)、電車(でんしゃ)、歩(ある)
+
+<li><b>例句:</b></li>
+	Ａさんはどんな人ですか？
+</pre>
 
 </div>
 
