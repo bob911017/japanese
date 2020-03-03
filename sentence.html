@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>常用句型</title>
+	<link rel="icon" href="oruyanke.png" type="image/x-icon">
+	<link rel='stylesheet' href='style.css'>
+</head>
+
+<script>
+function tableChange(n){
+	var id=[0,1];
+	var i;
+	for (i = 0; i < id.length; i++) {
+		if (id[i]==n){
+			document.getElementById('t'+id[i]).style.display='block';
+			document.getElementById('b'+id[i]).style.color='yellow';
+		}else{
+			document.getElementById('t'+id[i]).style.display='none';
+			document.getElementById('b'+id[i]).style.color='white';
+		}
+	}
+}
+</script>
+
+<body>
+
+<div class='index'>
+	<input class='index' type=button value='五十音' onclick="location.href='kana.html'">
+	<input class='index' type=button value='日常會話' onclick="location.href='nichijiou.html'">
+	<input class='index' type=button value='基礎文法' onclick="location.href='grammar.html'">
+	<input class='index' type=button value='常用句型' style='border-bottom: 5px red solid;'>
+</div>
+
+<div style="height:49px;width: 800px;">
+	<input id='b0' class='topic' type=button value='給/借' onclick='tableChange(0)' style='color:yellow'>
+	<input id='b1' class='topic' type=button value='雖然,可是' onclick='tableChange(1)'>
+</div>
+
+<div class='bg'>
+
+
+<div id='t0' style='display:block;'>
+
+<div class='cn'>給</div>
+<div class='nh'>あげます</div>
+<pre class='note'>
+<li>主語=我
+<li>私は <人> に <物> をあげます。　：　我給某人某物
+<li>私は <人> に <物> をあげました。　：　過去式
+</pre>
+
+<div class='cn'>收到</div>
+<div class='nh'>もらいます</div>
+<pre class='note'>
+<li>主語=我，有感謝的心情
+<li>私は <人> に <物> をもらいます。　：　我從某人得到某物
+<li>私は <人> から <物> をもらいます。　：　我從某人得到某物
+<li>私は <人> に <物> をもらいました。　：　過去式
+</pre>
+
+<div class='cn'>給</div>
+<div class='nh'>くれます</div>
+<pre class='note'>
+<li>主語=第三人稱，が表示前面的名詞是重點
+<li><人> が私に <物> をくれます。　：　某人給我某物
+<li><人> が私に <物> をくれました。　：　過去式
+</pre>
+
+<div class='cn'>借出</div>
+<div class='nh'>貸(か)します</div>
+<pre class='note'>
+<li>私は <人> に <物> を貸します。　：　我借某人某物
+<li>私は <人> から <物> を貸します。　：　我借某人某物
+</pre>
+
+<div class='cn'>借入</div>
+<div class='nh'>借(か)ります</div>
+<pre class='note'>
+<li>私は <人> に <物> を借します。　：　我從某人借某物
+<li>私は <人> から <物> を借します。　：　我從某人借某物
+</pre>
+
+</div>
+
+
+
+<div id='t1' style='display:none;'>
+<div class='cn'>雖然~可是</div>
+<div class='nh'>～が、～です</div>
+<li><b>例句:</b></li>
+  この食べ物は美味しいっですが、高いです。
+</pre>
+
+</div>
+
+
+</body>
+
+</html>

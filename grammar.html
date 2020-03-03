@@ -8,7 +8,7 @@
 
 <script>
 function tableChange(n){
-	var id=[0,1,2,3,4,5,6];
+	var id=[0,1,2,3,4,5];
 	var i;
 	for (i = 0; i < id.length; i++) {
 		if (id[i]==n){
@@ -28,16 +28,16 @@ function tableChange(n){
 	<input class='index' type=button value='五十音' onclick="location.href='kana.html'">
 	<input class='index' type=button value='日常會話' onclick="location.href='nichijiou.html'">
 	<input class='index' type=button value='基礎文法' style='border-bottom: 5px red solid;'>
+	<input class='index' type=button value='常用句型' onclick="location.href='sentence.html'">
 </div>
 
-<div style="height:49px;">
+<div style="height:49px;width: 800px;">
 	<input id='b0' class='topic' type=button value='初次見面' onclick='tableChange(0)' style='color:yellow'>
 	<input id='b1' class='topic' type=button value='這是' onclick='tableChange(1)'>
 	<input id='b2' class='topic' type=button value='場所' onclick='tableChange(2)'>
 	<input id='b3' class='topic' type=button value='動詞和助詞' onclick='tableChange(3)'>
 	<input id='b4' class='topic' type=button value='疑問詞' onclick='tableChange(4)'>
-	<input id='b5' class='topic' type=button value='給/借' onclick='tableChange(5)'>
-	<input id='b6' class='topic' type=button value='形容詞' onclick='tableChange(6)'>
+	<input id='b6' class='topic' type=button value='形容詞' onclick='tableChange(5)'>
 </div>
 
 <div class='bg'>
@@ -376,51 +376,6 @@ B: ふふ、Aさん、かわいいですね。</pre>
 
 
 <div id='t5' style='display:none;'>
-
-<div class='cn'>給</div>
-<div class='nh'>あげます</div>
-<pre class='note'>
-<li>主語=我
-<li>私は <人> に <物> をあげます。　：　我給某人某物
-<li>私は <人> に <物> をあげました。　：　過去式
-</pre>
-
-<div class='cn'>收到</div>
-<div class='nh'>もらいます</div>
-<pre class='note'>
-<li>主語=我，有感謝的心情
-<li>私は <人> に <物> をもらいます。　：　我從某人得到某物
-<li>私は <人> から <物> をもらいます。　：　我從某人得到某物
-<li>私は <人> に <物> をもらいました。　：　過去式
-</pre>
-
-<div class='cn'>給</div>
-<div class='nh'>くれます</div>
-<pre class='note'>
-<li>主語=第三人稱，が表示前面的名詞是重點
-<li><人> が私に <物> をくれます。　：　某人給我某物
-<li><人> が私に <物> をくれました。　：　過去式
-</pre>
-
-<div class='cn'>借出</div>
-<div class='nh'>貸(か)します</div>
-<pre class='note'>
-<li>私は <人> に <物> を貸します。　：　我借某人某物
-<li>私は <人> から <物> を貸します。　：　我借某人某物
-</pre>
-
-<div class='cn'>借入</div>
-<div class='nh'>借(か)ります</div>
-<pre class='note'>
-<li>私は <人> に <物> を借します。　：　我從某人借某物
-<li>私は <人> から <物> を借します。　：　我從某人借某物
-</pre>
-
-</div>
-
-
-
-<div id='t6' style='display:none;'>
 <table>
 	<tr style="background:black;color:white;">
 	<td></td><td>句型</td><td>範例</td>
@@ -441,6 +396,16 @@ B: ふふ、Aさん、かわいいですね。</pre>
 
 <li><b>例句:</b></li>
 	Ａさんはどんな人ですか？
+</pre>
+
+<div class='cn'>否定句</div>
+<div class='nh'>
+い形容詞 + くないです。<br>
+な形容詞 + じゃ（でわ）ありません。
+</div>
+<pre class='note'>
+<li><b>特例:</b></li>
+	いい\よい ---> よくない
 </pre>
 
 </div>
